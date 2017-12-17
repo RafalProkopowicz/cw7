@@ -12,7 +12,6 @@ int rekurencja(int n){
     return 0;
   } else {
     printf("%d \n", tab[n-1]);
-    sleep(1);
     return rekurencja(n-1);
   }
 }

@@ -8,13 +8,20 @@
 
 char napis2[10];
 
-char rekurencja(char* napis){
-  if (napis) {
-
-  }
+char pocoturekurencja(char znak, int pozycja){
+  napis2[pozycja] = znak;
 }
 
 int main(void){
   char napis[10] = {'qwerty'};
-  rekurencja(napis);
+
+  for (size_t i = 0, j = 10; i < 10; i++, j--) {
+    pocoturekurencja(napis[i], j);
+  }
+
+  for (size_t i = 0; i < 10; i++) {
+    printf("%s", napis2[i]);
+  }
+
+
 }
